@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VA CRM Prototype</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+  <header class="bg-green-600 text-white p-4 text-center text-2xl font-bold">Virtual Assistant CRM</header>
+
+  <main class="p-4 max-w-4xl mx-auto">
+    <!-- Tabs -->
+    <div class="flex space-x-2 mb-4">
+      <button class="tab-btn bg-gray-200 px-4 py-2 rounded font-semibold active" data-tab="emails">Emails</button>
+      <button class="tab-btn bg-gray-200 px-4 py-2 rounded font-semibold" data-tab="calendar">Calendar</button>
+      <button class="tab-btn bg-gray-200 px-4 py-2 rounded font-semibold" data-tab="data-entry">Notes</button>
+      <button class="tab-btn bg-gray-200 px-4 py-2 rounded font-semibold" data-tab="calls">Calls</button>
+    </div>
+
+    <!-- Emails -->
+    <div class="tab-content active bg-white p-4 rounded shadow" id="emails">
+      <h2 class="text-xl font-semibold mb-2">Email Inbox</h2>
+      <form id="email-form" class="mb-2 space-y-2">
+        <input type="text" id="email-subject" placeholder="Subject" class="w-full p-2 border rounded" required>
+        <textarea id="email-body" placeholder="Body" class="w-full p-2 border rounded"></textarea>
+        <label class="inline-flex items-center space-x-2">
+          <input type="checkbox" id="email-priority" class="rounded">
+          <span>High Priority</span>
+        </label>
+        <button class="bg-green-500 text-white px-4 py-2 rounded">Add Email</button>
+      </form>
+      <input type="text" id="email-search" placeholder="Search emails..." class="w-full p-2 border rounded mb-2">
+      <ul id="email-list" class="space-y-1"></ul>
+      <p id="email-report" class="mt-2 font-semibold"></p>
+    </div>
+
+    <!-- Calendar -->
+    <div class="tab-content bg-white p-4 rounded shadow" id="calendar">
+      <h2 class="text-xl font-semibold mb-2">Calendar</h2>
+      <form id="event-form" class="mb-2 space-y-2">
+        <input type="text" id="event-title" placeholder="Event title" class="w-full p-2 border rounded" required>
+        <input type="date" id="event-date" class="w-full p-2 border rounded" required>
+        <button class="bg-green-500 text-white px-4 py-2 rounded">Add Event</button>
+      </form>
+      <input type="text" id="event-search" placeholder="Search events..." class="w-full p-2 border rounded mb-2">
+      <ul id="event-list" class="space-y-1"></ul>
+    </div>
+
+    <!-- Notes -->
+    <div class="tab-content bg-white p-4 rounded shadow" id="data-entry">
+      <h2 class="text-xl font-semibold mb-2">Client Notes</h2>
+      <form id="note-form" class="mb-2 space-y-2">
+        <input type="text" id="note-client" placeholder="Client name" class="w-full p-2 border rounded" required>
+        <textarea id="note-text" placeholder="Note details" class="w-full p-2 border rounded" required></textarea>
+        <button class="bg-green-500 text-white px-4 py-2 rounded">Add Note</button>
+      </form>
+      <input type="text" id="note-search" placeholder="Search notes..." class="w-full p-2 border rounded mb-2">
+      <ul id="note-list" class="space-y-1"></ul>
+    </div>
+
+    <!-- Calls -->
+    <div class="tab-content bg-white p-4 rounded shadow" id="calls">
+      <h2 class="text-xl font-semibold mb-2">Call Logs</h2>
+      <form id="call-form" class="mb-2 space-y-2">
+        <input type="text" id="call-client" placeholder="Client name" class="w-full p-2 border rounded" required>
+        <textarea id="call-note" placeholder="Call notes" class="w-full p-2 border rounded"></textarea>
+        <button class="bg-green-500 text-white px-4 py-2 rounded">Add Call Log</button>
+      </form>
+      <input type="text" id="call-search" placeholder="Search calls..." class="w-full p-2 border rounded mb-2">
+      <ul id="call-list" class="space-y-1"></ul>
+    </div>
+  </main>
+
+  <script src="crm.js"></script>
+</body>
+</html>

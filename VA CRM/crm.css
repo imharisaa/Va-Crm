@@ -1,0 +1,102 @@
+/* body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+}
+
+header {
+  background: #4CAF50;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+main {
+  padding: 1rem;
+}
+
+.tabs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.tab-btn {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background: #ddd;
+  border: none;
+  border-radius: 5px;
+}
+
+.tab-btn.active {
+  background: #4CAF50;
+  color: white;
+}
+
+.tab-content {
+  display: none;
+  background: white;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+form input, form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+}
+
+form button {
+  padding: 0.5rem 1rem;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  background: #eee;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+
+ */
+
+
+
+
+ body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f4f4f4; }
+header { background:#4CAF50; color:white; padding:1rem; text-align:center; }
+main { padding:1rem; }
+.tabs { display:flex; gap:1rem; margin-bottom:1rem; }
+.tab-btn { padding:0.5rem 1rem; cursor:pointer; background:#ddd; border:none; border-radius:5px; }
+.tab-btn.active { background:#4CAF50; color:white; }
+.tab-content { display:none; background:white; padding:1rem; border-radius:5px; }
+.tab-content.active { display:block; }
+form input, form textarea { display:block; width:100%; margin-bottom:0.5rem; padding:0.5rem; }
+form button { padding:0.5rem 1rem; background:#4CAF50; color:white; border:none; cursor:pointer; border-radius:5px; }
+ul { list-style-type:none; padding-left:0; }
+ul li { background:#eee; margin-bottom:0.5rem; padding:0.5rem; border-radius:5px; }
+input[type="text"]#email-search,
+input[type="text"]#event-search,
+input[type="text"]#note-search,
+input[type="text"]#call-search {
+  margin:0.5rem 0 1rem 0; padding:0.5rem; width:100%;
+  border:1px solid #ccc; border-radius:5px;
+}
+.high-priority { color:red; font-weight:bold; }
