@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+
   // --- Tabs ---
   const tabs = document.querySelectorAll('.tab-btn');
   const contents = document.querySelectorAll('.tab-content');
